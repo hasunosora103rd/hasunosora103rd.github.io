@@ -1,3 +1,39 @@
+<style>
+.event-title{
+    max-width:600px;
+    margin:40px auto;
+    padding:25px;
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.event-title h2{
+    font-size:28px;
+    margin-bottom:20px;
+    border-bottom:2px solid #eee;
+    padding-bottom:10px;
+}
+
+.event-info{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    font-size:16px;
+    margin:8px 0;
+}
+
+.label{
+    font-weight:bold;
+    color:#555;
+}
+
+.value{
+    color:#222;
+}
+</style>
+
 <div class="sub-tab-list" role="tablist">
     <button class="sub-tab-btn active" data-subtab="103-04">4月</button>
     <button class="sub-tab-btn" data-subtab="103-05">5月</button>
@@ -14,6 +50,19 @@
 </div>
 
 <div class="sub-tab-panel active" id="103-04">
+    <div class="event-title">
+        <h2>103期4月度Fes×LIVE</h2>
+
+        <div class="event-info">
+            <span class="label">📍 会場</span>
+            <span class="value">卯辰山公園ふれあい広場ステージ</span>
+        </div>
+
+        <div class="event-info">
+            <span class="label">📅 日程</span>
+            <span class="value">2023年05月01日(月)</span>
+        </div>
+    </div>
     <div class="album-grid">
         <div class="photo-card" onclick="openLightbox('/images/fes103_4/fes_live_1.png')">
             <img class="photo-img" src="/images/fes103_4/fes_live_1.png" alt="103期 Fes×LIVE">
