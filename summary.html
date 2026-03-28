@@ -187,6 +187,39 @@
             font-weight: 600;
         }
 
+        /* アイコン枠 */
+        .contact-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #c084d4, #a78bfa);
+            color: white;
+        }
+
+        /* 各カード */
+        .contact-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 28px;
+            box-shadow: 0 4px 20px rgba(200, 130, 210, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 5px solid #c084d4;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 32px rgba(200, 130, 210, 0.2);
+        }
+
         @media (max-width: 768px) {
             .page-hero h2 {
                 font-size: 1.6rem;
@@ -214,7 +247,7 @@
     <!-- ページヒーロー -->
     <section class="page-hero">
         <div class="container page-hero-content">
-            <h2>103期生 卒業アルバム企画</h2>
+            <h2>蓮ノ三連華 卒業アルバム企画</h2>
         </div>
     </section>
 
@@ -307,6 +340,18 @@
                         ・画像のサイズを変更、またはトリミングする場合があります。
                     </li>
                 </ul>
+            </div>
+
+            <!-- 責任者 -->
+            <div class="summary-section">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </div>
+                <div class="contact-text">
+                    <div class="value">主催：ほわぁ(<a href="https://x.com/howaaLoveLive" target="_blank">@howaaLoveLive</a>)</div>
+                </div>
             </div>
 
         </div>
